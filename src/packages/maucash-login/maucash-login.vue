@@ -16,7 +16,7 @@
             </FormItem>
             <FormItem prop="code" v-if="isSms">
               <Input :maxlength="4" type="text" v-model="userForm.code" placeholder="Please enter code">
-              <span slot="append" class="get-code" @click="getCode" v-if="!is_get_code">get sms code</span>
+              <span slot="append" class="get-code" @click="getCode" v-if="!is_get_code">get sms code awsom</span>
               <span slot="append" class="get-code" v-if="is_get_code">{{time_txt}}</span>
               </Input>
             </FormItem>
