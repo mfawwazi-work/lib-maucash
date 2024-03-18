@@ -16,7 +16,7 @@
             </FormItem>
             <FormItem prop="code" v-if="isSms">
               <Input :maxlength="4" type="text" v-model="userForm.code" placeholder="Please enter code">
-              <span slot="append" class="get-code" @click="getCode" v-if="!is_get_code">get sms code</span>
+              <span slot="append" class="get-code" @click="getCode" v-if="!is_get_code">get sms code ini</span>
               <span slot="append" class="get-code" v-if="is_get_code">{{time_txt}}</span>
               </Input>
             </FormItem>
@@ -30,7 +30,7 @@
         <Alert v-show="error" type="error" class="error">{{error}}</Alert>
       </div>
       <!-- 登陆弹框end -->
-      <p class="login-info" v-if="isLogInfo">This technology is the proprietary property of WeLab and its affiliates. Any system grant does not provide ownership or the right to own the system or any specific module.</p>
+      <p class="login-info" v-if="isLogInfo">This technology is the proprietary property of Awsom and its affiliates. Any system grant does not provide ownership or the right to own the system or any specific module.</p>
     </div>
     <div v-else>
       <maucash-review :baseUrl="baseUrl" :imgUrl="imgUrl" :accessToken="accessToken" :headers="headers" @loginHandle="loginHandle"></maucash-review>
